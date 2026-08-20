@@ -200,6 +200,8 @@
   letter-spacing: 0.02em;
   cursor: pointer;
   transition: 0.2s ease;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 .header .btn:hover {
   transform: translateY(-1px);

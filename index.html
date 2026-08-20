@@ -14,10 +14,10 @@
     <link rel="stylesheet" href="assets/css/pages/home.css" />
     <script src="assets/js/shared/site-init.js"></script>
     <script src="assets/js/pages/home.js" defer></script>
-  
-<link rel="stylesheet" href="assets/css/shared/site-header.css">
-<link rel="stylesheet" href="assets/css/shared/site-footer.css">
-</head>
+
+    <link rel="stylesheet" href="assets/css/shared/site-header.css" />
+    <link rel="stylesheet" href="assets/css/shared/site-footer.css" />
+  </head>
   <body>
     <!-- Icon sprite: the stat rows repeat across every account card, so the
          shapes are defined once and referenced with <use>. -->
@@ -63,49 +63,109 @@
     </svg>
 
     <header class="header" id="siteHeader">
-  <div class="container nav" id="nav">
-    <a class="logo" href="index.html" aria-label="Heaven Guardian homepage">
-      <img src="assets/images/brand/heaven-guardian-logo.webp" alt="Heaven Guardian">
-    </a>
-    <nav class="navlinks" aria-label="Primary navigation">
-      <a href="index.html">HOME</a>
-      <div class="has-menu">
-        <a class="nav-parent" href="index.html#games" aria-haspopup="true">BUY GAMING ACCOUNTS<span class="chev" aria-hidden="true"></span></a>
-        <button type="button" class="mega-toggle" aria-expanded="false" aria-label="Show game account categories"><span class="chev" aria-hidden="true"></span></button>
-        <div class="mega">
-          <a href="pages/albion-online-accounts.html">BUY ALBION ONLINE</a>
-          <a href="https://heaven-guardian.com/call-of-dragons-account-for-sale/">BUY CALL OF DRAGONS</a>
-          <a href="https://heaven-guardian.com/kingshot-account-for-sale/">BUY KINGSHOT</a>
-          <a href="https://heaven-guardian.com/last-war-account-for-sale/">BUY LAST WAR</a>
-          <a href="https://heaven-guardian.com/rok-accounts-for-sale/">BUY RISE OF KINGDOMS</a>
-          <a href="https://heaven-guardian.com/whiteout-survival-accounts/">BUY WHITEOUT SURVIVAL</a>
-          <a href="https://heaven-guardian.com/buy-mobile-legends-account/">BUY MOBILE LEGENDS</a>
+      <div class="container nav" id="nav">
+        <a class="logo" href="index.html" aria-label="Heaven Guardian homepage">
+          <img
+            src="assets/images/brand/heaven-guardian-logo.webp"
+            alt="Heaven Guardian"
+          />
+        </a>
+        <nav class="navlinks" aria-label="Primary navigation">
+          <a href="index.html">HOME</a>
+          <div class="has-menu">
+            <a class="nav-parent" href="index.html#games" aria-haspopup="true"
+              >BUY GAMING ACCOUNTS<span class="chev" aria-hidden="true"></span
+            ></a>
+            <button
+              type="button"
+              class="mega-toggle"
+              aria-expanded="false"
+              aria-label="Show game account categories"
+            >
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="mega">
+              <a href="pages/albion-online-accounts.html">BUY ALBION ONLINE</a>
+              <a
+                href="https://heaven-guardian.com/call-of-dragons-account-for-sale/"
+                >BUY CALL OF DRAGONS</a
+              >
+              <a href="https://heaven-guardian.com/kingshot-account-for-sale/"
+                >BUY KINGSHOT</a
+              >
+              <a href="https://heaven-guardian.com/last-war-account-for-sale/"
+                >BUY LAST WAR</a
+              >
+              <a href="https://heaven-guardian.com/rok-accounts-for-sale/"
+                >BUY RISE OF KINGDOMS</a
+              >
+              <a href="https://heaven-guardian.com/whiteout-survival-accounts/"
+                >BUY WHITEOUT SURVIVAL</a
+              >
+              <a href="https://heaven-guardian.com/buy-mobile-legends-account/"
+                >BUY MOBILE LEGENDS</a
+              >
+            </div>
+          </div>
+          <a href="pages/wanted-accounts.html">WANTED ACCOUNT</a>
+          <div class="has-menu">
+            <a
+              class="nav-parent"
+              href="https://heaven-guardian.com/top-up/"
+              aria-haspopup="true"
+              >TOP UP<span class="chev" aria-hidden="true"></span
+            ></a>
+            <button
+              type="button"
+              class="mega-toggle"
+              aria-expanded="false"
+              aria-label="Show top up categories"
+            >
+              <span class="chev" aria-hidden="true"></span>
+            </button>
+            <div class="mega mega-plain">
+              <a href="https://heaven-guardian.com/kingshot-top-up/"
+                >Kingshot Top Up</a
+              >
+              <a href="https://heaven-guardian.com/last-war-top-up/"
+                >Last War Top Up</a
+              >
+              <a href="https://heaven-guardian.com/last-z-top-up/"
+                >Last Z Top Up</a
+              >
+              <a href="https://heaven-guardian.com/rise-of-kingdoms-top-up/"
+                >Rise of Kingdoms Top Up</a
+              >
+              <a href="https://heaven-guardian.com/whiteout-survival-top-up/"
+                >Whiteout Survival Top Up</a
+              >
+            </div>
+          </div>
+          <a href="https://heaven-guardian.com/contact/">CONTACT</a>
+        </nav>
+        <div class="nav-actions">
+          <select class="currency" aria-label="Currency">
+            <option>EUR</option>
+            <option>USD</option>
+          </select>
+          <a
+            class="btn btn-primary track"
+            data-event="header_browse"
+            href="index.html#featured"
+            >Browse Accounts</a
+          >
         </div>
+        <button
+          class="menu-btn"
+          id="menuBtn"
+          aria-expanded="false"
+          aria-controls="nav"
+          aria-label="Open navigation menu"
+        >
+          ☰
+        </button>
       </div>
-      <a href="pages/wanted-accounts.html">WANTED ACCOUNT</a>
-      <div class="has-menu">
-        <a class="nav-parent" href="https://heaven-guardian.com/top-up/" aria-haspopup="true">TOP UP<span class="chev" aria-hidden="true"></span></a>
-        <button type="button" class="mega-toggle" aria-expanded="false" aria-label="Show top up categories"><span class="chev" aria-hidden="true"></span></button>
-        <div class="mega mega-plain">
-          <a href="https://heaven-guardian.com/kingshot-top-up/">Kingshot Top Up</a>
-          <a href="https://heaven-guardian.com/last-war-top-up/">Last War Top Up</a>
-          <a href="https://heaven-guardian.com/last-z-top-up/">Last Z Top Up</a>
-          <a href="https://heaven-guardian.com/rise-of-kingdoms-top-up/">Rise of Kingdoms Top Up</a>
-          <a href="https://heaven-guardian.com/whiteout-survival-top-up/">Whiteout Survival Top Up</a>
-        </div>
-      </div>
-      <a href="https://heaven-guardian.com/contact/">CONTACT</a>
-    </nav>
-    <div class="nav-actions">
-      <select class="currency" aria-label="Currency">
-        <option>EUR</option>
-        <option>USD</option>
-      </select>
-      <a class="btn btn-primary track" data-event="header_browse" href="index.html#featured">Browse Accounts</a>
-    </div>
-    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open navigation menu">☰</button>
-  </div>
-</header>
+    </header>
 
     <main>
       <section class="hero" data-reveal-now style="--reveal-dur: 0.7s">
@@ -123,7 +183,11 @@
               Whiteout Survival, Kingshot, Last War Survival, Rise of Kingdoms,
               and more.
             </p>
-            <div class="hero-ctas" data-reveal="up" style="--reveal-delay: 0.34s">
+            <div
+              class="hero-ctas"
+              data-reveal="up"
+              style="--reveal-delay: 0.34s"
+            >
               <a
                 class="btn btn-primary track"
                 data-event="hero_browse"
@@ -312,7 +376,9 @@
               <div class="game-info">
                 <div class="game-name">Albion Online</div>
                 <div class="game-meta">
-                  <span class="game-count"><span data-count-to="18">0</span></span>
+                  <span class="game-count"
+                    ><span data-count-to="18">0</span></span
+                  >
                   <span>accounts available</span>
                   <span class="game-go" aria-hidden="true">→</span>
                 </div>
@@ -333,7 +399,9 @@
               <div class="game-info">
                 <div class="game-name">Call of Dragons</div>
                 <div class="game-meta">
-                  <span class="game-count"><span data-count-to="24">0</span></span>
+                  <span class="game-count"
+                    ><span data-count-to="24">0</span></span
+                  >
                   <span>accounts available</span>
                   <span class="game-go" aria-hidden="true">→</span>
                 </div>
@@ -354,7 +422,9 @@
               <div class="game-info">
                 <div class="game-name">Kingshot</div>
                 <div class="game-meta">
-                  <span class="game-count"><span data-count-to="21">0</span></span>
+                  <span class="game-count"
+                    ><span data-count-to="21">0</span></span
+                  >
                   <span>accounts available</span>
                   <span class="game-go" aria-hidden="true">→</span>
                 </div>
@@ -376,7 +446,9 @@
               <div class="game-info">
                 <div class="game-name">Mobile Legends</div>
                 <div class="game-meta">
-                  <span class="game-count"><span data-count-to="15">0</span></span>
+                  <span class="game-count"
+                    ><span data-count-to="15">0</span></span
+                  >
                   <span>accounts available</span>
                   <span class="game-go" aria-hidden="true">→</span>
                 </div>
@@ -397,7 +469,9 @@
               <div class="game-info">
                 <div class="game-name">Last War</div>
                 <div class="game-meta">
-                  <span class="game-count"><span data-count-to="27">0</span></span>
+                  <span class="game-count"
+                    ><span data-count-to="27">0</span></span
+                  >
                   <span>accounts available</span>
                   <span class="game-go" aria-hidden="true">→</span>
                 </div>
@@ -418,7 +492,9 @@
               <div class="game-info">
                 <div class="game-name">Rise of Kingdoms</div>
                 <div class="game-meta">
-                  <span class="game-count"><span data-count-to="34">0</span></span>
+                  <span class="game-count"
+                    ><span data-count-to="34">0</span></span
+                  >
                   <span>accounts available</span>
                   <span class="game-go" aria-hidden="true">→</span>
                 </div>
@@ -439,7 +515,9 @@
               <div class="game-info">
                 <div class="game-name">Whiteout Survival</div>
                 <div class="game-meta">
-                  <span class="game-count"><span data-count-to="32">0</span></span>
+                  <span class="game-count"
+                    ><span data-count-to="32">0</span></span
+                  >
                   <span>accounts available</span>
                   <span class="game-go" aria-hidden="true">→</span>
                 </div>
@@ -457,7 +535,10 @@
               <h2 class="brush">Featured Gaming Accounts</h2>
             </div>
             <div class="head-actions">
-              <div class="product-toolbar" aria-label="Filter featured products">
+              <div
+                class="product-toolbar"
+                aria-label="Filter featured products"
+              >
                 <button type="button" class="pill active" data-filter="all">
                   All
                 </button>
@@ -505,7 +586,9 @@
                     <span class="badge-soft badge-region">S19xx</span>
                     <span class="badge-soft badge-hot">HOT OFFER</span>
                   </span>
-                  <span class="badge-soft badge-verified">&#10003; Verified</span>
+                  <span class="badge-soft badge-verified"
+                    >&#10003; Verified</span
+                  >
                 </div>
                 <div class="avatar">
                   <img
@@ -515,7 +598,8 @@
                   />
                 </div>
                 <div class="media-meta">
-                  <b>700M+ Power</b><span>Whiteout Survival &middot; Furnace 10</span>
+                  <b>700M+ Power</b
+                  ><span>Whiteout Survival &middot; Furnace 10</span>
                 </div>
               </div>
               <div class="product-body">
@@ -525,25 +609,29 @@
                 <div class="stats">
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-power" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-power" /></svg></i
                       >700M+</b
                     ><span>Power</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-vip" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-vip" /></svg></i
                       >VIP 12</b
                     ><span>VIP Level</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-troop" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-troop" /></svg></i
                       >T11</b
                     ><span>Troop Tier</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-gem" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-gem" /></svg></i
                       >739K</b
                     ><span>Gems</span>
                   </div>
@@ -581,7 +669,8 @@
                   >
                 </div>
                 <div class="warranty">
-                  <i>&#10003;</i> Eligible recall protection &middot; Terms apply
+                  <i>&#10003;</i> Eligible recall protection &middot; Terms
+                  apply
                 </div>
               </div>
             </article>
@@ -592,7 +681,9 @@
                     <span class="badge-soft badge-region">75M</span>
                     <span class="badge-soft badge-hot">POPULAR</span>
                   </span>
-                  <span class="badge-soft badge-verified">&#10003; Verified</span>
+                  <span class="badge-soft badge-verified"
+                    >&#10003; Verified</span
+                  >
                 </div>
                 <div class="avatar">
                   <img
@@ -612,25 +703,29 @@
                 <div class="stats">
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-power" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-power" /></svg></i
                       >75M</b
                     ><span>Power</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-vip" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-vip" /></svg></i
                       >SVIP</b
                     ><span>VIP Level</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-troop" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-troop" /></svg></i
                       >42</b
                     ><span>Legendary Max</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-gem" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-gem" /></svg></i
                       >46</b
                     ><span>Legendary Gears</span>
                   </div>
@@ -668,7 +763,8 @@
                   >
                 </div>
                 <div class="warranty">
-                  <i>&#10003;</i> Eligible recall protection &middot; Terms apply
+                  <i>&#10003;</i> Eligible recall protection &middot; Terms
+                  apply
                 </div>
               </div>
             </article>
@@ -678,7 +774,9 @@
                   <span class="badge-group">
                     <span class="badge-soft badge-region">118M</span>
                   </span>
-                  <span class="badge-soft badge-verified">&#10003; Verified</span>
+                  <span class="badge-soft badge-verified"
+                    >&#10003; Verified</span
+                  >
                 </div>
                 <div class="avatar">
                   <img
@@ -698,25 +796,29 @@
                 <div class="stats">
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-power" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-power" /></svg></i
                       >118M</b
                     ><span>Power</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-vip" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-vip" /></svg></i
                       >VIP 19</b
                     ><span>VIP Level</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-troop" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-troop" /></svg></i
                       >39</b
                     ><span>Legendary Max</span>
                   </div>
                   <div class="stat">
                     <b
-                      ><i class="stat-ico"><svg><use href="#ico-gem" /></svg></i
+                      ><i class="stat-ico"
+                        ><svg><use href="#ico-gem" /></svg></i
                       >50</b
                     ><span>Legendary Gears</span>
                   </div>
@@ -754,7 +856,8 @@
                   >
                 </div>
                 <div class="warranty">
-                  <i>&#10003;</i> Eligible recall protection &middot; Terms apply
+                  <i>&#10003;</i> Eligible recall protection &middot; Terms
+                  apply
                 </div>
               </div>
             </article>
@@ -879,7 +982,10 @@
             <p>Four checkpoints between your payment and your account.</p>
           </div>
           <ol class="timeline" id="protectionTimeline">
-            <li class="tl-item" style="--i: 0; --step-icon: var(--icon-compare)">
+            <li
+              class="tl-item"
+              style="--i: 0; --step-icon: var(--icon-compare)"
+            >
               <div class="tl-dot"><i aria-hidden="true"></i></div>
               <strong>Listing Reviewed</strong>
               <span>Details checked before publication.</span>
@@ -921,62 +1027,171 @@
               <div class="rc-eyebrow">Marketplace feedback</div>
               <strong>4.7</strong>
               <span>Based on 487+ completed orders</span>
-              <a class="rc-tp" href="https://www.trustpilot.com/review/heaven-guardian.com" target="_blank" rel="noopener">
+              <a
+                class="rc-tp"
+                href="https://www.trustpilot.com/review/heaven-guardian.com"
+                target="_blank"
+                rel="noopener"
+              >
                 <b>★</b> Read reviews on Trustpilot <i>→</i>
               </a>
             </div>
             <div class="rc-head" data-reveal="right">
               <h2>Trusted by Real Players</h2>
               <p>
-                Feedback from buyers and sellers who used Heaven Guardian for gaming account trades and top-ups.
-                These reviews reflect marketplace service and transfer support, not one specific account listing.
+                Feedback from buyers and sellers who used Heaven Guardian for
+                gaming account trades and top-ups. These reviews reflect
+                marketplace service and transfer support, not one specific
+                account listing.
               </p>
             </div>
           </div>
 
           <div class="rc-shell" data-reveal="up">
-            <div class="rc-index"><b data-rc-current>01</b><i>/</i><span data-rc-total>06</span></div>
+            <div class="rc-index">
+              <b data-rc-current>01</b><i>/</i><span data-rc-total>06</span>
+            </div>
             <div class="rc-stage">
               <blockquote class="rc-quote is-active">
-                <p>“Hello, I played Whiteout Survival and had a massive account. Unfortunately when selling you lose quite a bit. However, the process was very smooth. They are knowledgeable and quick to respond, and even with the time difference, everything went well. I was worried because there is always a risk, but having gone through everything, I’m happy I used them as middlemen. Payment was received, the client received the account, and everyone wins. Would recommend again!”</p>
-                <footer><strong>Emanuel Roman</strong><span>✓ Verified Seller · Whiteout Survival</span></footer>
+                <p>
+                  “Hello, I played Whiteout Survival and had a massive account.
+                  Unfortunately when selling you lose quite a bit. However, the
+                  process was very smooth. They are knowledgeable and quick to
+                  respond, and even with the time difference, everything went
+                  well. I was worried because there is always a risk, but having
+                  gone through everything, I’m happy I used them as middlemen.
+                  Payment was received, the client received the account, and
+                  everyone wins. Would recommend again!”
+                </p>
+                <footer>
+                  <strong>Emanuel Roman</strong
+                  ><span>✓ Verified Seller · Whiteout Survival</span>
+                </footer>
               </blockquote>
 
               <blockquote class="rc-quote">
-                <p>“I’ve been going back and forth with Kingshot customer support for months trying to unbind my account and the headache was real, especially since some of the purchases were made through third party services. A friend recommended Heaven Guardian and I’m glad I reached out. The whole process was handled smoothly from start to finish and even a complicated case like mine was resolved with patience and clear communication. Genuinely one of the better middleman services out there.”</p>
-                <footer><strong>Desto Fresco</strong><span>✓ Verified Seller · Kingshot</span></footer>
+                <p>
+                  “I’ve been going back and forth with Kingshot customer support
+                  for months trying to unbind my account and the headache was
+                  real, especially since some of the purchases were made through
+                  third party services. A friend recommended Heaven Guardian and
+                  I’m glad I reached out. The whole process was handled smoothly
+                  from start to finish and even a complicated case like mine was
+                  resolved with patience and clear communication. Genuinely one
+                  of the better middleman services out there.”
+                </p>
+                <footer>
+                  <strong>Desto Fresco</strong
+                  ><span>✓ Verified Seller · Kingshot</span>
+                </footer>
               </blockquote>
 
               <blockquote class="rc-quote">
-                <p>“Heaven Guardian was able to quickly find a buyer for my account and helped me through the account transfer process. Everything was smooth, safe, and well organized. Would definitely recommend. Thank you so much.”</p>
-                <footer><strong>Solari Solvane</strong><span>✓ Verified Seller · Marketplace</span></footer>
+                <p>
+                  “Heaven Guardian was able to quickly find a buyer for my
+                  account and helped me through the account transfer process.
+                  Everything was smooth, safe, and well organized. Would
+                  definitely recommend. Thank you so much.”
+                </p>
+                <footer>
+                  <strong>Solari Solvane</strong
+                  ><span>✓ Verified Seller · Marketplace</span>
+                </footer>
               </blockquote>
 
               <blockquote class="rc-quote">
-                <p>“5-star experience! My account unbinding request was handled very fast. The staff guided me step by step and made everything easy. Thank you for the great service!”</p>
-                <footer><strong>Quill Ateara</strong><span>✓ Verified Seller · Kingshot</span></footer>
+                <p>
+                  “5-star experience! My account unbinding request was handled
+                  very fast. The staff guided me step by step and made
+                  everything easy. Thank you for the great service!”
+                </p>
+                <footer>
+                  <strong>Quill Ateara</strong
+                  ><span>✓ Verified Seller · Kingshot</span>
+                </footer>
               </blockquote>
 
               <blockquote class="rc-quote">
-                <p>“The whole team is extremely professional, patient, and helpful. They’ve tried their best to protect both buyer and seller throughout the process.”</p>
-                <footer><strong>Joe</strong><span>✓ Verified Buyer · Marketplace</span></footer>
+                <p>
+                  “The whole team is extremely professional, patient, and
+                  helpful. They’ve tried their best to protect both buyer and
+                  seller throughout the process.”
+                </p>
+                <footer>
+                  <strong>Joe</strong
+                  ><span>✓ Verified Buyer · Marketplace</span>
+                </footer>
               </blockquote>
 
               <blockquote class="rc-quote">
-                <p>“Very serious and helpful. They guided me step by step and provided help anytime needed. Top service.”</p>
-                <footer><strong>Narcis Leț</strong><span>✓ Verified Buyer · Marketplace</span></footer>
+                <p>
+                  “Very serious and helpful. They guided me step by step and
+                  provided help anytime needed. Top service.”
+                </p>
+                <footer>
+                  <strong>Narcis Leț</strong
+                  ><span>✓ Verified Buyer · Marketplace</span>
+                </footer>
               </blockquote>
             </div>
           </div>
 
           <div class="rc-nav" data-reveal="up">
             <div class="rc-dots" role="tablist" aria-label="Choose a review">
-              <button class="rc-dot is-active" type="button" role="tab" aria-selected="true" aria-label="Review 1"><i></i></button>
-              <button class="rc-dot" type="button" role="tab" aria-selected="false" aria-label="Review 2"><i></i></button>
-              <button class="rc-dot" type="button" role="tab" aria-selected="false" aria-label="Review 3"><i></i></button>
-              <button class="rc-dot" type="button" role="tab" aria-selected="false" aria-label="Review 4"><i></i></button>
-              <button class="rc-dot" type="button" role="tab" aria-selected="false" aria-label="Review 5"><i></i></button>
-              <button class="rc-dot" type="button" role="tab" aria-selected="false" aria-label="Review 6"><i></i></button>
+              <button
+                class="rc-dot is-active"
+                type="button"
+                role="tab"
+                aria-selected="true"
+                aria-label="Review 1"
+              >
+                <i></i>
+              </button>
+              <button
+                class="rc-dot"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="Review 2"
+              >
+                <i></i>
+              </button>
+              <button
+                class="rc-dot"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="Review 3"
+              >
+                <i></i>
+              </button>
+              <button
+                class="rc-dot"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="Review 4"
+              >
+                <i></i>
+              </button>
+              <button
+                class="rc-dot"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="Review 5"
+              >
+                <i></i>
+              </button>
+              <button
+                class="rc-dot"
+                type="button"
+                role="tab"
+                aria-selected="false"
+                aria-label="Review 6"
+              >
+                <i></i>
+              </button>
             </div>
           </div>
         </div>
@@ -1139,16 +1354,16 @@
     </div>
 
     <footer class="site-footer">
-  <div class="container">
-    <div class="site-footer-bottom">
-      <span>&copy; 2026 Heaven Guardian. All rights reserved.</span>
-      <div class="site-footer-legal">
-        <a href="pages/legal/terms-and-conditions.html">Terms</a>
-        <a href="pages/legal/privacy-policy.html">Privacy</a>
-        <a href="pages/legal/return-policy.html">Returns</a>
+      <div class="container">
+        <div class="site-footer-bottom">
+          <span>&copy; 2026 Heaven Guardian. All rights reserved.</span>
+          <div class="site-footer-legal">
+            <a href="pages/legal/terms-and-conditions.html">Terms</a>
+            <a href="pages/legal/privacy-policy.html">Privacy</a>
+            <a href="pages/legal/return-policy.html">Returns</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</footer>
+    </footer>
   </body>
 </html>
