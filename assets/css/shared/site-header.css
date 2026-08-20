@@ -1,0 +1,321 @@
+/* Shared floating site header. Self-contained (no page variables) so it can be
+   dropped onto pages that do not load home.css. */
+.header {
+  position: sticky;
+  inset: auto;
+  top: 0;
+  height: auto;
+  min-height: 0;
+  z-index: 50;
+  background: transparent;
+  border-bottom: none;
+  transition: 0.25s ease;
+  padding: 12px 0;
+}
+.header.scrolled {
+  background: transparent;
+  border-bottom: none;
+  backdrop-filter: none;
+}
+.header * {
+  box-sizing: border-box;
+}
+.header a {
+  color: inherit;
+  text-decoration: none;
+}
+.header img {
+  display: block;
+  max-width: 100%;
+}
+.header .nav {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  background: #ffffff;
+  border-radius: 999px;
+  padding: 0 32px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  width: min(1160px, calc(100% - 36px));
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+.header .logo {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+}
+.header .logo img {
+  width: 100%;
+  height: auto;
+}
+.header .navlinks {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+.header .navlinks a {
+  padding: 10px 18px;
+  color: #111827;
+  white-space: nowrap;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+.header .navlinks a:hover {
+  background: #071a3d;
+  color: #ffffff;
+}
+/* Dropdown menus */
+.header .has-menu {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.header .navlinks .nav-parent {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.header .chev {
+  width: 6px;
+  height: 6px;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: translateY(-2px) rotate(45deg);
+  transition: transform 0.25s ease;
+}
+.header .has-menu:hover > .nav-parent,
+.header .has-menu:focus-within > .nav-parent {
+  background: #071a3d;
+  color: #ffffff;
+}
+.header .has-menu:hover > .nav-parent .chev,
+.header .has-menu:focus-within > .nav-parent .chev {
+  transform: translateY(1px) rotate(225deg);
+}
+.header .mega-toggle {
+  display: none;
+  width: 34px;
+  height: 34px;
+  flex: 0 0 auto;
+  place-items: center;
+  background: #fff;
+  border: 1px solid #dce7f5;
+  border-radius: 50%;
+  color: #0d1b38;
+  cursor: pointer;
+}
+.header .navlinks .mega {
+  position: absolute;
+  top: calc(100% + 16px);
+  left: 50%;
+  z-index: 2;
+  display: grid;
+  gap: 2px;
+  min-width: 262px;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  border-top: 3px solid #0b8ee8;
+  border-radius: 16px;
+  box-shadow: 0 24px 55px rgba(5, 28, 68, 0.18);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-50%) translateY(-8px);
+  transition:
+    opacity 0.22s ease,
+    transform 0.22s ease,
+    visibility 0.22s;
+}
+/* Invisible bridge so the panel survives the gap under the nav pill */
+.header .navlinks .mega:before {
+  content: "";
+  position: absolute;
+  top: -19px;
+  left: 0;
+  right: 0;
+  height: 19px;
+}
+.header .has-menu:hover > .mega,
+.header .has-menu:focus-within > .mega {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+.header .navlinks .mega a {
+  display: block;
+  padding: 11px 14px;
+  border-radius: 10px;
+  color: #1f2937;
+  font-size: 12.5px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+.header .navlinks .mega-plain a {
+  letter-spacing: 0.01em;
+  font-size: 13px;
+}
+.header .navlinks .mega a:hover {
+  background: #f2f7fd;
+  color: #0a2b63;
+}
+.header .nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header .currency {
+  border: 1px solid #dce7f5;
+  background: #fff;
+  border-radius: 999px;
+  padding: 10px 12px;
+  color: #0d1b38;
+  font-weight: 800;
+  font-size: 12px;
+  outline: none;
+}
+.header .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 0;
+  border-radius: 12px;
+  padding: 13px 18px;
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.header .btn:hover {
+  transform: translateY(-1px);
+}
+.header .btn-primary {
+  background: linear-gradient(135deg, #0b8ee8, #2f65ff);
+  color: #fff;
+  box-shadow: 0 10px 24px rgba(11, 142, 232, 0.28);
+}
+.header .menu-btn {
+  display: none;
+  margin-left: auto;
+  border: 1px solid #dce7f5;
+  background: transparent;
+  color: #0d1b38;
+  border-radius: 10px;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+  .header .nav {
+    gap: 16px;
+    padding: 0 22px;
+  }
+  .header .navlinks a {
+    padding: 10px 13px;
+    font-size: 12px;
+  }
+  .header .currency {
+    display: none;
+  }
+}
+@media (max-width: 980px) {
+  .header .navlinks,
+  .header .nav-actions {
+    display: none;
+  }
+  .header .menu-btn {
+    display: flex;
+  }
+  .header .nav {
+    height: 68px;
+    border-radius: 999px;
+    padding: 0 20px;
+  }
+  .header .nav.open {
+    height: auto;
+    min-height: 68px;
+    flex-wrap: wrap;
+    padding-bottom: 16px;
+    border-radius: 24px;
+  }
+  .header .nav.open .navlinks {
+    display: flex;
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 7px;
+    padding-top: 8px;
+    border-top: 1px solid #dce7f5;
+  }
+  .header .nav.open .nav-actions {
+    display: flex;
+    order: 4;
+    width: 100%;
+  }
+  /* Dropdowns become inline accordions inside the mobile menu */
+  .header .navlinks .has-menu {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .header .navlinks .nav-parent {
+    flex: 1;
+  }
+  .header .mega-toggle {
+    display: grid;
+  }
+  .header .has-menu.open .mega-toggle .chev {
+    transform: translateY(1px) rotate(225deg);
+  }
+  .header .has-menu:hover > .nav-parent {
+    background: transparent;
+    color: #111827;
+  }
+  .header .navlinks .mega {
+    position: static;
+    display: none;
+    width: 100%;
+    min-width: 0;
+    margin: 6px 0 4px 12px;
+    padding: 0 0 0 8px;
+    border: 0;
+    border-left: 2px solid #dce7f5;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+  }
+  .header .navlinks .mega:before {
+    display: none;
+  }
+  .header .has-menu.open > .mega {
+    display: grid;
+  }
+  .header .navlinks .mega a {
+    padding: 9px 12px;
+    white-space: normal;
+  }
+  .header .currency {
+    display: block;
+  }
+}
